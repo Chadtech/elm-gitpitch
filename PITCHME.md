@@ -52,11 +52,9 @@ module Main exposing (main)
 import Html exposing (Html, p, div, text)
 import Html.Attributes exposing (class)
 
-
 main : Html msg
 main =
 	div [] [ greet "Munich" ]
-
 
 greet : String -> Html msg
 greet who =
@@ -69,12 +67,9 @@ greet who =
 
 #### You can make your own types
 ```elm
-type HousePet
-	= Dog
-	| Cat
-	| Mouse
+type Pet = Dog | Cat | Mouse
 
-animalSound : HousePet -> String
+animalSound : Pet -> String
 animalSound pet =
 	case pet of
 		Dog ->
@@ -86,3 +81,49 @@ animalSound pet =
 		Mouse ->
 			"Squeak"
 ```
+
+---
+
+#### Maybe Type
+```elm
+type Maybe a = Just a | Nothing
+
+maybeUserView : Maybe User -> Html Msg
+maybeUserView maybeUser =
+	case maybeUser of
+		Just user ->
+			userView user
+
+		Nothing ->
+			p [] [ text "no user" ]
+```
+
+---
+
+#### Basic Update Function
+
+---
+```elm
+type Msg = LoginButtonClicked | FieldUpdated String
+
+update : Msg -> Model -> Model
+update msg model =
+	case msg of
+		LoginButtonClicked ->
+			attemptLogin model
+
+		FieldUpdated newField ->
+			setField model newField
+```
+
+
+
+
+
+
+
+
+
+
+
+
