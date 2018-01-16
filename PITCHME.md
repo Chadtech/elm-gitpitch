@@ -6,7 +6,7 @@
 
 ---
 
-## Test
+#### Test
 
 ```elm
 color : String -> Maybe Color
@@ -31,4 +31,4 @@ color str =
 - This
 - Is
 - What |
-- BULLETS LOOK LIKE
+- BULLETS LOOK LIKE |
