@@ -1,15 +1,15 @@
-@font-face {
-  font-family: HFNSS;
-  src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/HFNSS.ttf");
-}
+// @font-face {
+//   font-family: HFNSS;
+//   src: url("https://cdn.rawgit.com/Chadtech-Online-1/Chadtech-Online-1.github.io/master/HFNSS.ttf");
+// }
 
-* {
-	font-family: HFNSS !important;
-	-webkit-font-smoothing: none !important;
-	font-size: 52px !important;
-}
+// * {
+// 	// font-family: HFNSS !important;
+// 	-webkit-font-smoothing: none !important;
+// 	font-size: 52px !important;
+// }
 
-span {
-	font-size: 52px !important;
-	line-height: 36px !important;
-}
+// span {
+// 	font-size: 52px !important;
+// 	line-height: 36px !important;
+// }
