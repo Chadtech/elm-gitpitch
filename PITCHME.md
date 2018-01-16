@@ -29,6 +29,24 @@ function very (str) {
 
 ---
 
+#### You can curry
+```elm
+append : String -> String -> String
+append str0 str1 =
+	str0 ++ str1
+
+append 
+	--> String -> String -> String
+
+append "very " 
+	--> String -> String
+
+append "very " "cool" 
+	--> String
+```
+
+---
+
 #### Here is a very simple Elm program
 
 ```elm
