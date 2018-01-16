@@ -12,9 +12,24 @@
 - You cant import npm packages into it, only Elm packages
 ```
 
+
 ---
 
-#### This is what Elm looks like
+#### Comparison to JS
+```elm
+very : String -> String
+very str =
+	"very " ++ str
+```
+```javascript
+function very (str) {
+	return "very " + str;
+}
+```
+
+---
+
+#### Here is a very simple Elm program
 
 ```elm
 module Main exposing (main)
