@@ -6,12 +6,9 @@
 
 #### Elm is a programming language
 
-```
 - It just happens to compile to JavaScript
 - Its not transpiling
 - You cant import npm packages into it, only Elm packages
-```
-
 
 ---
 
@@ -52,16 +49,40 @@ append "very " "cool"
 ```elm
 module Main exposing (main)
 
-import Html exposing (Html, p, text)
+import Html exposing (Html, p, div, text)
 import Html.Attributes exposing (class)
 
 
 main : Html msg
 main =
+	div [] [ greet "Munich" ]
+
+
+greet : String -> Html msg
+greet who =
 	p
 		[ class "greeting" ]
-		[ text "Hello, World!" ]
+		[ text ("Hello " ++ who) ]
 ```
 
 ---
 
+#### You can make your own types
+```elm
+type HousePet
+	= Dog
+	| Cat
+	| Mouse
+
+animalSound : HousePet -> String
+animalSound pet =
+	case pet of
+		Dog ->
+			"Bark"
+
+		Cat ->
+			"Meow"
+
+		Mouse ->
+			"Squeak"
+```
