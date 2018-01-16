@@ -9,6 +9,8 @@
 - It just happens to compile to JavaScript
 - Its not transpiling
 - You cant import npm packages into it, only Elm packages
+- Everything is immutable
+- Architecture is that of React / Redux
 
 ---
 
@@ -32,16 +34,23 @@ append : String -> String -> String
 append str0 str1 =
 	str0 ++ str1
 
-append 
-	--> String -> String -> String
-
-append "very " 
-	--> String -> String
-
-append "very " "cool" 
-	--> String
+very : String -> String
+very =
+	append "very"
 ```
 
+
+#### You can pipe
+
+```javascript
+mixin(otherStuff, doThat(doThis(somestuff)));
+```
+```elm
+someStuff
+	|> doThis
+	|> doThat
+	|> mixin otherStuff
+```
 ---
 
 #### Here is a very simple Elm program
