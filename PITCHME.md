@@ -102,7 +102,6 @@ maybeUserView maybeUser =
 
 #### Basic Update Function
 
----
 ```elm
 type Msg = LoginButtonClicked | FieldUpdated String
 
