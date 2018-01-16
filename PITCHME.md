@@ -9,7 +9,7 @@
 - It just happens to compile to JavaScript
 - Its not transpiling
 - You cant import npm packages into it, only Elm packages
-- Everything is immutable
+- Immutability always
 - Architecture is that of React / Redux
 
 ---
@@ -51,6 +51,7 @@ someStuff
 	|> doThat
 	|> mixin otherStuff
 ```
+
 ---
 
 #### Here is a very simple Elm program
@@ -124,6 +125,30 @@ update msg model =
 			setField model newField
 ```
 
+---
+
+#### Friendly compiler
+```
+The argument to function `fromPage` is causing a mismatch.
+
+145|                        fromPage 4
+                                     ^
+Function `fromPage` is expecting the argument to be:
+
+    Id
+
+But it is:
+
+    number
+```
+
+---
+
+#### Key Advantages
+
+- **!! NO RUN TIME ERRORS !!**
+- Painless refactoring
+- High performance with no optimizations
 
 
 
