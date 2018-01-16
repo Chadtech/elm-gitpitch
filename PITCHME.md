@@ -6,27 +6,19 @@
 
 ---
 
-#### Test
+#### Elm is a programming language
 
 ```elm
-color : String -> Maybe Color
-color str =
-	case str of
-		"blue" ->
-			Just Color.blue
-
-		"red" ->
-			Just Color.red
-
-		_ ->
-			Nothing
+- It just happens to compile to JavaScript
+- Its not transpiling
+- You cant import JavaScript libraries into it
 ```
 
 
 ---
 
 
-## Also Test
+#### Also Test
 
 - This
 - Is
