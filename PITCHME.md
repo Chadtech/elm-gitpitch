@@ -9,8 +9,6 @@
 ## Test
 
 ```elm
-
-
 color : String -> Maybe Color
 color str =
 	case str of
@@ -22,7 +20,6 @@ color str =
 
 		_ ->
 			Nothing
-
 ```
 
 
