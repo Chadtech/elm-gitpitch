@@ -1,26 +1,34 @@
 # Elm
 
-
-![Logo](https://avatars2.githubusercontent.com/u/4359353?s=200&v=4)
-
+![Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Elm_logo.svg/1200px-Elm_logo.svg.png)
 
 ---
 
 #### Elm is a programming language
 
-```elm
+```
 - It just happens to compile to JavaScript
 - Its not transpiling
-- You cant import JavaScript libraries into it
+- You cant import npm packages into it, only Elm packages
 ```
-
 
 ---
 
+#### This is what Elm looks like
 
-#### Also Test
+```elm
+module Main exposing (main)
 
-- This
-- Is
-- What |
-- BULLETS LOOK LIKE |
+import Html exposing (Html, p, text)
+import Html.Attributes exposing (class)
+
+
+main : Html msg
+main =
+	p
+		[ class "greeting" ]
+		[ text "Hello, World!" ]
+```
+
+---
+
