@@ -9,8 +9,38 @@
 - It just happens to compile to JavaScript
 - Its not transpiling
 - You cant import npm packages into it, only Elm packages
-- Immutability always
-- Architecture is that of React / Redux
+
+---
+
+#### Architecture is that of React / Redux
+
+
+- state -> Model
+- reducer -> update 
+- actions -> Msg
+- Sagas / Redux Loop / Redux Promises -> Cmd
+- render -> view
+
+---
+
+#### You have to follow the rules
+
+- The compiler demands it
+- package version numbers must follow semver
+- Elm format has no config options
+
+---
+
+---
+
+#### Things are typed
+
+```elm
+sum : List Int -> Int
+concat : List (List a) -> List a
+List.map : (a -> b) -> List a -> List b
+Array.get : Int -> Array a -> Maybe a
+```
 
 ---
 
@@ -37,8 +67,13 @@ append str0 str1 =
 very : String -> String
 very =
 	append "very"
+
+-- append : String -> String -> String
+-- append "very " : String -> String
+-- append "very " "cool" : String
 ```
 
+---
 
 #### You can pipe
 
