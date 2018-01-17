@@ -12,7 +12,7 @@
 
 ---
 
-#### Architecture is that of React / Redux
+#### The Elm Architecture is that of React / Redux
 
 
 - state -> Model
@@ -31,13 +31,11 @@
 
 ---
 
----
-
 #### Things are typed
 
 ```elm
-sum : List Int -> Int
-concat : List (List a) -> List a
+String.fromInt : Int -> String
+List.concat : List (List a) -> List a
 List.map : (a -> b) -> List a -> List b
 Array.get : Int -> Array a -> Maybe a
 ```
@@ -68,9 +66,9 @@ very : String -> String
 very =
 	append "very"
 
--- append : String -> String -> String
--- append "very " : String -> String
--- append "very " "cool" : String
+append : String -> String -> String
+append "very " : String -> String
+append "very " "cool" : String
 ```
 
 ---
@@ -78,9 +76,11 @@ very =
 #### You can pipe
 
 ```javascript
+// JavaScript
 mixin(otherStuff, doThat(doThis(somestuff)));
 ```
 ```elm
+-- Elm
 someStuff
 	|> doThis
 	|> doThat
